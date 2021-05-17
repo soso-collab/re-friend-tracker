@@ -6,7 +6,7 @@ export class GuiModel {
 
     private _guiModel = {
         "application": {
-            "title": "Requirements Engineering Friend Tracker",
+            "title": "soso collab friend tracker",
             "formList": [
                 {
                     "id": "FriendForm",
@@ -25,6 +25,13 @@ export class GuiModel {
                             "type": "text",
                             "name": "FirstName",
                             "width": 1,
+                            "required": true
+                        },
+                        {
+                            "id": "nickname",
+                            "type": "text",
+                            "name": "Nickname",
+                            "width": 2,
                             "required": true
                         },
                         {
@@ -156,6 +163,13 @@ export class GuiModel {
                             }
                         },
                         {
+                            "type": "button",
+                            "name": "Groups",
+                            "icon": "fas fa-map-marked-alt",
+                            "color": "wisteria",
+                            "page": "groupspage",
+                        },
+                        {
                             "type": "list",
                             "icon": "fa-user",
                             "color": "blue",
@@ -191,6 +205,23 @@ export class GuiModel {
                             "url": "/location",
                             "form": {
                                 "form": "LocationForm"
+                            }
+                        },
+                    ]
+                },
+                {
+                    "id": "groupspage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "newGroup",
+                            "icon": "fa-weixin",
+                            "color": "green",
+                            "form": {
+                                "form": "GroupForm"
                             }
                         },
                     ]
