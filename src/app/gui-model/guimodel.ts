@@ -196,7 +196,7 @@ export class GuiModel {
                         },
                         {
                             "type": "newButton",
-                            "name": "NewFriend",
+                            "name": "EditFriend",
                             "icon": "fa-user",
                             "color": "green",
                             "form": {
@@ -204,17 +204,85 @@ export class GuiModel {
                             }
                         },
                         {
+                            "type": "button",
+                            "name": "zu ActivityPage",
+                            "icon": "fa-user",
+                            "color": "yellow",
+                            "search": true,
+                            "url": "/friend",
+                            "page": "activitypage",
+                            //hier muss man mit der form auf die Aktivitäten
+                            //seite kommen, die muss erstellt werden
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "AddActivity",
+                            "icon": "fa-calendar-alt",
+                            "color": "blue",
+                            "form": {
+                                "form": "AddActivityForm"
+                            }
+                            //hier kann man die Aktivitäten hinzufügen
+                        },
+                        {
                             "type": "list",
                             "icon": "fa-user",
-                            "color": "blue",
+                            "color": "red",
                             "search": true,
                             "url": "/friend",
                             "form": {
                                 "form": "FriendForm"
                             }
+                            //hier zeigt es nun die Freunde an
+                        },
+                        
+                        
+                    ]
+                    
+                 
+                },
+
+                {
+                    "id": "activitypage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "EditFriend",
+                            "icon": "fa-user",
+                            "color": "green",
+                            "form": {
+                                "form": "FriendForm"
+                            }
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "AddActivity",
+                            "icon": "fa-calendar",
+                            "color": "green",
+                            "form": {
+                                "form": "AddActivityForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-calendar",
+                            "color": "blue",
+                            "search": true,
+                            "url": "/activity",
+                            "form": {
+                                "form": "AddActivityForm"
+                            }
                         },
                     ]
+                    //die acitivty page funktioniert wenn ich 
+                    // unter friends und dann auf auf activity page clicke
+
+
                 },
+                
                 {
                     "id": "locationspage",
                     "elementList": [
