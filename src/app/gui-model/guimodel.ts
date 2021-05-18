@@ -171,6 +171,7 @@ export class GuiModel {
                             "icon": "fa-users",
                             "color": "blue",
                             "page": "friendspage",
+                            //MainMenu Friends Button
                         },
                         {
                             "type": "button",
@@ -178,6 +179,7 @@ export class GuiModel {
                             "icon": "fa-map-marked-alt",
                             "color": "yellow",
                             "page": "locationspage",
+                            //MainMenu Location Button
                         },
                         {
                             "type": "button",
@@ -185,11 +187,13 @@ export class GuiModel {
                             "icon": "fa-street-view",
                             "color": "wisteria",
                             "page": "groupspage",
+                            //MainMenu Groups Button
                         },
                     ]
                 },
                 {
                     "id": "friendspage",
+                    //Friends Seite
                     "elementList": [
                         {
                             "type": "backbutton",
@@ -204,26 +208,8 @@ export class GuiModel {
                             }
                         },
                         {
-                            "type": "newButton",
-                            "name": "ActivityPage",
-                            "icon": "fa-user",
-                            "color": "yellow",
-                            "page": "activitypage",
-                            //hier muss man mit der form auf die Aktivitäten
-                            //seite kommen, die muss erstellt werden
-                        },
-                        {
-                            "type": "newButton",
-                            "name": "AddActivity",
-                            "icon": "fa-calendar-alt",
-                            "color": "blue",
-                            "form": {
-                                "form": "AddActivityForm"
-                            }
-                            //hier kann man die Aktivitäten hinzufügen
-                        },
-                        {
                             "type": "list",
+                            "page": "activitypage",
                             "icon": "fa-user",
                             "color": "red",
                             "search": true,
@@ -233,8 +219,6 @@ export class GuiModel {
                             }
                             //hier zeigt es nun die Freunde an
                         },
-                        
-                        
                     ]
                     
                  
