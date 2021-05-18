@@ -35,6 +35,14 @@ export class GuiModel {
                             "required": true
                         },
                         {
+                            "id": "group",
+                            "type": "autocomplete",
+                            "name": "Group",
+                            "url": "/group",
+                            "form": "GroupFrom",
+                            "width": 2
+                        },
+                        {
                             "id":   "location",
                             "type": "autocomplete",
                             "name": "Location",
@@ -125,6 +133,32 @@ export class GuiModel {
                         }
                     ]
                 },
+                {
+                    "id": "GroupForm",
+                    "title": "Group",
+                    "url": "/group",
+                    "formFieldList": [
+                        {
+                            "id":   "name",
+                            "type": "text",
+                            "name": "GroupName",
+                            "width": 2,
+                            "required": true
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
             ],
             "pageList": [
                 {
@@ -134,16 +168,23 @@ export class GuiModel {
                         {
                             "type": "button",
                             "name": "Friends",
-                            "icon": "fa-user",
+                            "icon": "fa-users",
                             "color": "blue",
                             "page": "friendspage",
                         },
                         {
                             "type": "button",
                             "name": "Location",
-                            "icon": "fa-cubes",
+                            "icon": "fa-map-marked-alt",
                             "color": "yellow",
                             "page": "locationspage",
+                        },
+                        {
+                            "type": "button",
+                            "name": "Groups",
+                            "icon": "fa-street-view",
+                            "color": "wisteria",
+                            "page": "groupspage",
                         },
                     ]
                 },
@@ -161,13 +202,6 @@ export class GuiModel {
                             "form": {
                                 "form": "FriendForm"
                             }
-                        },
-                        {
-                            "type": "button",
-                            "name": "Groups",
-                            "icon": "fas fa-map-marked-alt",
-                            "color": "wisteria",
-                            "page": "groupspage",
                         },
                         {
                             "type": "list",
@@ -217,9 +251,19 @@ export class GuiModel {
                         },
                         {
                             "type": "newButton",
-                            "name": "newGroup",
+                            "name": "NewGroup",
                             "icon": "fa-weixin",
                             "color": "green",
+                            "form": {
+                                "form": "GroupForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-weixin",
+                            "color": "wisteria",
+                            "search":true,
+                            "url": "/group",
                             "form": {
                                 "form": "GroupForm"
                             }
