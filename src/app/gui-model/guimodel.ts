@@ -204,12 +204,10 @@ export class GuiModel {
                             }
                         },
                         {
-                            "type": "button",
-                            "name": "zu ActivityPage",
+                            "type": "newButton",
+                            "name": "ActivityPage",
                             "icon": "fa-user",
                             "color": "yellow",
-                            "search": true,
-                            "url": "/friend",
                             "page": "activitypage",
                             //hier muss man mit der form auf die Aktivitäten
                             //seite kommen, die muss erstellt werden
