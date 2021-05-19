@@ -200,7 +200,7 @@ export class GuiModel {
                         },
                         {
                             "type": "newButton",
-                            "name": "EditFriend",
+                            "name": "NewFriend",
                             "icon": "fa-user",
                             "color": "green",
                             "form": {
@@ -231,7 +231,7 @@ export class GuiModel {
                             "type": "backbutton",
                         },
                         {
-                            "type": "newButton",
+                            "type": "button",
                             "name": "EditFriend",
                             "icon": "fa-user",
                             "color": "green",
@@ -240,7 +240,7 @@ export class GuiModel {
                             }
                         },
                         {
-                            "type": "newButton",
+                            "type": "button",
                             "name": "AddActivity",
                             "icon": "fa-calendar",
                             "color": "green",
