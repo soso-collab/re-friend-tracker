@@ -189,6 +189,15 @@ export class GuiModel {
                             "page": "groupspage",
                             //MainMenu Groups Button
                         },
+                        {
+                            "type": "button",
+                            "name": "Actitvity",
+                            "icon": "fa-basketball-ball",
+                            "color": "lime",
+                            "page": "activitypage",
+                            //MainMenu Groups Button
+                        },
+
                     ]
                 },
                 {
@@ -231,19 +240,11 @@ export class GuiModel {
                             "type": "backbutton",
                         },
                         {
-                            "type": "button",
-                            "name": "EditFriend",
-                            "icon": "fa-user",
-                            "color": "green",
-                            "form": {
-                                "form": "FriendForm"
-                            }
-                        },
-                        {
-                            "type": "button",
+                            "type": "newButton",
                             "name": "AddActivity",
                             "icon": "fa-calendar",
                             "color": "green",
+                            "width": 2,
                             "form": {
                                 "form": "AddActivityForm"
                             }
